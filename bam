@@ -1,0 +1,23 @@
+class Dog  
+  def initialize(breed,legs,ears)  
+    @breed = breed  
+    @legs = legs
+    @ears = ears
+  end  
+  
+  def to_s  
+    "(#@breed, #@name,#@legs,#@ears)"  
+  end  
+end  
+  
+class Pit < Dog  
+  def initialize(breed, name,legs,ears)  
+    # super(breed)  
+    @name = name 
+    @breed = breed  
+    @legs = legs
+    @ears = ears 
+  end  
+end  
+  
+puts Pit.new("Pitbull", "Cochise","four","two").to_s 
